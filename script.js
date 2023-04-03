@@ -8,12 +8,12 @@ let clock = () =>{
     let hours = time.getHours();
     let minutes = time.getMinutes();
     let seconds = time.getSeconds();
-    // if(hours > 12){
-    //     hours = hours - 12
-    //     ampm.innerText = "PM"
-    // }else{
-    //     ampm.innerText = "am"
-    // }
+    if(hours > 12){
+        hours = hours - 12
+        ampm.innerText = "PM"
+    }else{
+        ampm.innerText = "am"
+    }
     let msg = document.getElementById("box7")
 if(hours>8 && hours<12){
     msg.innerText = "Wake up good morning"
@@ -32,7 +32,6 @@ if(hours>8 && hours<12){
 setInterval(() =>{
     clock();
 }, 1000)
-
 
 let wake = document.getElementById("wakeup")
 let lunch = document.getElementById("lunch")
@@ -58,8 +57,20 @@ button.addEventListener("click", () =>{
         msg2.innerHTML = "Go and sleep"
         img.style.backgroundImage = "url('./nightsleep.webp')";
     }
+
+    let mtext = wake.options[wake.selectedIndex].textContent;
+    let sachin = document.getElementById("91")
+    sachin.textContent = mtext
+
+    let mtext2 = lunch.options[lunch.selectedIndex].textContent;
+    let sachin2 = document.getElementById("92")
+    sachin2.textContent = mtext2
+
+    let mtext3 = nap.options[nap.selectedIndex].textContent;
+    let sachin3 = document.getElementById("93")
+    sachin3.textContent = mtext3
+
+    let mtext4 = night.options[night.selectedIndex].textContent;
+    let sachin4 = document.getElementById("94")
+    sachin4.textContent = mtext4
 })
-
-
-
-
