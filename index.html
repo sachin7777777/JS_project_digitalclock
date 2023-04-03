@@ -13,8 +13,9 @@
             <div class="first">
             <div class="box" id="box1"><img src="./clock_logo.png" alt=""></div>
             <div class="box" id="box2">
-                <img src="./wake_up.svg" alt="">&nbsp; &nbsp;<span class="purple">Set wake up time &nbsp; &nbsp;</span>
+                <img src="./wake_up.svg" alt="" id="image">&nbsp; &nbsp;<span class="purple">Set wake up time &nbsp; &nbsp;</span>
                     <select name="" id="wakeup" class="dropdown">
+                    <option value="default">default</option>
                     <option value="24">12AM-01AM</option>
                     <option value="01">01AM-02AM</option>
                     <option value="02">02AM-03AM</option>
@@ -42,6 +43,7 @@
                 </select><br><br>
                 <img src="./lunch_time.svg" alt="">&nbsp; &nbsp;<span class="purple">Set lunch time &nbsp; &nbsp; &nbsp; &nbsp;</span><span>
                     <select name="" class="dropdown" id="lunch">
+                    <option value="default">default</option>
                     <option value="24">12AM-01AM</option>
                     <option value="01">01AM-02AM</option>
                     <option value="02">02AM-03AM</option>
@@ -69,6 +71,7 @@
                 </select></span> <br> <br>
                 <img src="./nap_time.svg" alt="">&nbsp; &nbsp;<span class="purple">Set nap time &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span>
                     <select name="" class="dropdown" id="nap">
+                    <option value="default">default</option>
                     <option value="24">12AM-01AM</option>
                     <option value="01">01AM-02AM</option>
                     <option value="02">02AM-03AM</option>
@@ -96,6 +99,7 @@
                 </select></span> <br> <br>
                 <img src="./lunch_time.svg" alt="">&nbsp; &nbsp;<span class="purple">Set night time &nbsp; &nbsp; &nbsp; &nbsp;</span>
                     <select name="" class="dropdown" id="night">
+                    <option value="default">default</option>
                     <option value="24">12AM-01AM</option>
                     <option value="01">01AM-02AM</option>
                     <option value="02">02AM-03AM</option>
@@ -125,7 +129,7 @@
             <div class="box" id="box3">GOOD MORNING!! WAKE UP!!</div>
             <div class="bottom">
                 <div id="box4">Set Alarm</div>
-                <div id="box5">Breakup time: 10AM-11AM <br> Lunch time: 10AM-11AM <br> Nap time: 10AM-11AM <br> Night time: 10AM-11AM <br></div>
+                <div id="box5">Breakfast time: <span id="91">Default</span> <br> Lunch time: <span id="92">Default</span><br> Nap time: <span id="93">Default</span><br> Night time: <span id="94">Default</span><br></div>
             </div>
             </div>
         </div>
@@ -133,8 +137,8 @@
             <div class="second">
             <div class="box" id="box6">
                 <div class="time" id="sachin">TIME</div>
-                <div class="time"><span class="am" id="h">10</span><br><span class="pm">hours</span></div>:
-                <div class="time"><span class="am" id="m">00</span><br><span class="pm">mins</span></div>:
+                <div class="time"><span class="am" id="h">10</span><br><span class="pm">hours</span></div><span class="points">:</span>
+                <div class="time"><span class="am" id="m">00</span><br><span class="pm">mins</span></div><span class="points">:</span>
                 <div class="time"><span class="am" id="s">01</span><br><span class="pm">secs</span></div>
                 <div class="time" id="sachin2">AM</div>
             </div>
